@@ -33,3 +33,89 @@
     color: #111;
 }
 
+textarea:focus, input:focus {
+    color: #111;
+}
+
+input, select, textarea{
+    color: #000;
+}
+
+.container .nav > button {
+    background: #111;
+    color: #fafafa;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.container .nav > button#menuToggle {
+    display: none;
+    padding: 6px;
+    font-size: 22px;
+}
+
+.container .nav > i {
+    font-size: 20px;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .main {
+    display: flex;
+}
+
+.container .main .content {
+    flex: 9;
+}
+
+.container .main .content .header {
+    margin-top: 20px;
+}
+
+.container .main .content .header h4 span {
+    font-size: 13px;
+    color: #a4a8ac;
+    font-weight: 500;
+}
+
+.container .main .content .header p{
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.container .main .content .Comunit-cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.container .main .content .Comunit-cards .card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border: 2px solid #818080;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.container .main .content .Comunit-cards .card:hover {
+    box-shadow: none;
+
+}
+
+.container .main .content .Comunit-cards .card .card-header { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main .content .Comunit-cards .card .card-header > i {
+    font-size: 24px;
+    cursor: pointer;
+}
+

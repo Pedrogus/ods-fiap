@@ -117,5 +117,20 @@ input, select, textarea{
 .container .main .content .Comunit-cards .card .card-header > i {
     font-size: 24px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.container .main .content .Comunit-cards .card .card-header > i:hover {
+    color: #111;
+}
+
+.container .main .content .Comunit-cards .card .card-desc {
+    font-size: 13px;
+    color: #a4a8ac;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: calc(18px * 3);
+
+}

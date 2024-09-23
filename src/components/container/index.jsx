@@ -1,6 +1,6 @@
-import './style.css'
+import './container.css'
 
-const Container = () => {
+function Container() {
 
     return (
         <div className="container">

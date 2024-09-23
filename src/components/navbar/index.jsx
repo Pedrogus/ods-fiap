@@ -1,6 +1,6 @@
-import './style.css'
+import './navbar.css'
 
- const Navbar = () => {
+ function Navbar() {
 
     return (
         

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
 import Home from './pages/Home'
+import Login from './pages/Login'
+import Dashbord from './pages/Dados de Recursos'
 
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route index='/' element={<Home/>} />
+      <Route path='/Home' element={<Home/>} />
+      <Route path='/Login' element={<Login />} />
+      <Route path='/Dashbord' element={<Dashbord />} />
     </Routes>
     </BrowserRouter>
     </>

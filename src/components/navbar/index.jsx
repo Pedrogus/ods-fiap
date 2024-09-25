@@ -3,20 +3,20 @@ import './navbar.css'
  function Navbar() {
 
     return (
-        
+        <body>
         <div className="sidebar">
-        <a href='#'>HOME</a> 
+        <a href='/Home'>HOME</a> 
         
       <div className="side-nav">
 
         <div className="item active">
           <i class='bx bx-leaf'></i>
-            <a href='#'>Comunidades</a>
+            <a href='/Home'>Comunidades</a>
         </div>
 
         <div className="item active">
           <i class='bx bx-objects-vertical-bottom'></i>
-            <a href='#'>Dados de Recurso</a>
+            <a href='/Dashbord'>Dados de Recurso</a>
         </div>
 
         <div className="item">
@@ -33,10 +33,11 @@ import './navbar.css'
         
         <div className="side-profile">
             <i class='bx bx-user' ></i>
-            <a href="#">Usuario</a>
+            <a href="/Login">Usuario</a>
         </div>
 
       </div>
+      </body>
     )
  }
 

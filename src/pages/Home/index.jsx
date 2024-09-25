@@ -1,4 +1,4 @@
-import './Home.css'
+import './home.css'
 import Container from "../../components/Container"
 import Navbar from "../../components/Navbar"
 

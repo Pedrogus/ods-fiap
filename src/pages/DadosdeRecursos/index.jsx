@@ -1,13 +1,13 @@
 import React from 'react';
-import './Dashbord.css';
+import './styles.css';
 import Navbar from '../../components/Navbar';
 
-import { Bar, Doughnut } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, LineElement, PointElement, plugins, scales } from 'chart.js';
 
 
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, Title, Tooltip, Legend);
 
 
 function Dashbord() {
@@ -24,6 +24,25 @@ function Dashbord() {
             }
         ],
     };
+
+    const data2 = {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [
+          {
+            label: 'First dataset',
+            data: [33, 53, 85, 41, 44, 65],
+            fill: true,
+            backgroundColor: ['rgba(75,192,192,0.2)'],
+            borderColor: ['rgba(75,192,192,1)']
+          },
+          {
+            label: 'Second dataset',
+            data: [33, 25, 35, 51, 54, 76],
+            fill: false,
+            borderColor: ['#742774']
+          }
+        ]
+      };
     
     const opitions = {
         responsive: true,
@@ -48,7 +67,13 @@ function Dashbord() {
     <body>
       
         <Navbar />
-    <div className='container'>
+        
+    <div>
+        <header className='NomeDaPagina'>
+            <h1>Dados de Recursos</h1>
+        </header>
+
+    <div className="columns">
         <main className="content">
             <section id='resumo'>
                 <h2>Resumo de dados</h2>
@@ -59,7 +84,7 @@ function Dashbord() {
             </div>
             </section>
 
-            <section id='gradicos'>
+            <section id='graficos'>
                 <h2>Graficos</h2>
             <div className='card'>
                 <Bar data={data} options={opitions} />
@@ -106,11 +131,69 @@ function Dashbord() {
                 <h2>Relatorios</h2>
                 <div className='card'>
                     <p>Aqui você pode baixar ou vizualizar relatorios detalhados 
-                        sobre a produtividade agricula anual</p>
+                        sobre a produtividade agricula semestral</p>
+
                     <button>Baixar Relatorio</button>
                 </div>
             </section>
         </main>
+
+        <main className="content">
+            <section id='resumo'>
+                <h2>Resumo de dados</h2>
+            <div className='card'>
+                <p>Safras do primeiro semestre 2024</p>
+                <p>Lucro da Safra: R$ 1,5 mil por hectare</p>
+                <p>importações: 7,5%</p>
+            </div>
+            </section>
+
+            <section id='graficos'>
+                <h2>Graficos</h2>
+            <div className='card'>
+                <Bar data={data2} options={opitions}/>
+            </div>
+            </section>
+
+            <section id='tabela'>
+                <h2>Tabela de Dados</h2>
+                <div className='card'>
+                    <table className='table'>
+                        <thead>
+                            <tr>
+                                <th>Nome do Produto</th>
+                                <th>tipo de Solo</th>
+                                <th>Tempo da Safra</th>
+                                <th>Peso da Safra (T)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Soja</td>
+                                <td>Mato Grosso</td>
+                                <td>120 dias</td>
+                                <td>146,8 milhões de toneladas</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Souza</td>
+                                <td>Centro-Oeste</td>
+                                <td>Irrigação Sustentável</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Lima</td>
+                                <td>Sudeste</td>
+                                <td>Energia Solar</td>
+                                <td>35%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        </div>
+
+    
     </div>
     </body>
         </>

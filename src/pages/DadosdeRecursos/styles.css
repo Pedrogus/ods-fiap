@@ -1,3 +1,14 @@
+.NomeDaPagina {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.columns {
+  display: flex; 
+  justify-content: space-between;
+}
+
 .content {
     width: 80%;
     padding: 20px;
@@ -11,7 +22,6 @@
     transition: all 0.3s ease;
   }
   
-  /* Estilos da tabela */
   table {
     width: 100%;
     border-collapse: collapse;

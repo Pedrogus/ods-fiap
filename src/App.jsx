@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Dashbord from './pages/Dados de Recursos'
+import Dashbord from './pages/DadosdeRecursos'
 
 
 function App() {

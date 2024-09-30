@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 
  function Navbar() {
@@ -5,35 +6,35 @@ import './styles.css'
     return (
         <body>
         <div className="sidebar">
-        <a href='/Home'>HOME</a> 
+        <Link className='link' to='/Home'>HOME</Link> 
         
       <div className="side-nav">
 
         <div className="item active">
           <i class='bx bx-leaf'></i>
-            <a href='/Home'>Comunidades</a>
+            <Link className='link' to='/Home'>Comunidades</Link>
         </div>
 
         <div className="item active">
           <i class='bx bx-objects-vertical-bottom'></i>
-            <a href='/Dashbord'>Dados de Recurso</a>
+            <Link className='link' to='/Dashbord'>Dados de Recurso</Link>
         </div>
 
         <div className="item">
           <i class='bx bx-bell'></i>
-            <a href='#'>Notifications</a>
+            <Link className='link' to='#'>Notifications</Link>
         </div>
 
         <div className="item">
           <i class='bx bx-cog'></i>
-            <a href='#'>Settings</a>
+            <Link className='link' to='#'>Settings</Link>
         </div>
 
       </div>
         
         <div className="side-profile">
             <i class='bx bx-user' ></i>
-            <a href="/Login">Usuario</a>
+            <Link className='link' to="/Login">Usuario</Link>
         </div>
 
       </div>

@@ -9,7 +9,7 @@
 }
 
 
-.sidebar > a {
+.sidebar > .link {
     font-size: 24px;
     color: #eee;
     font-weight: 500;
@@ -30,12 +30,12 @@
     cursor: pointer;
 }
 
-.sidebar .side-nav .item a {
+.sidebar .side-nav .item .link {
     color: #a4aBac;
     transition: all 0.3s ease;
 }
 
-.sidebar .side-nav .item i {
+.sidebar .side-nav .item .link {
     font-size: 20px;
     transition: all 0.3s ease;
 }
@@ -45,7 +45,7 @@
 
 }
 
-.sidebar .side-nav .item.active a, 
+.sidebar .side-nav .item.active .link, 
 .sidebar .side-nav .item.active i {
     color: #111;
     font-weight: bold;
@@ -57,7 +57,7 @@
     border-radius: 10px;
 }
 
-.sidebar .side-profile i, .sidebar .side-profile a {
+.sidebar .side-profile i, .sidebar .side-profile .link {
     color: #111;
     font-size: 20px;
     padding: 10px;

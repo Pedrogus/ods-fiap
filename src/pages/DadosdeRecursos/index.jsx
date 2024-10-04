@@ -2,15 +2,27 @@ import React from 'react';
 import './styles.css';
 import Navbar from '../../components/Navbar';
 
-import { Bar } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, LineElement, PointElement, plugins, scales } from 'chart.js';
-
+ChartJS.register(
+    LineElement,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    Title,
+    Tooltip,
+    Legend
+  );
 
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, Title, Tooltip, Legend);
 
 
 function Dashbord() {
+
+    const relatorio = () => {
+        alert(`Você baixou o relatorio`)
+    }
 
     const data = {
         labels: ['João Silva', 'Ana Souza', 'Carlos Lima'],
@@ -25,24 +37,43 @@ function Dashbord() {
         ],
     };
 
-    const data2 = {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    const dataLine = {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Set', 'Oct', 'Nov', 'Dez'],
         datasets: [
           {
-            label: 'First dataset',
-            data: [33, 53, 85, 41, 44, 65],
+            label: 'Lucro',
+            data: [30, 53, 65, 41, 44, 65, 55, 45, 33, 30, 32, 40],
             fill: true,
             backgroundColor: ['rgba(75,192,192,0.2)'],
             borderColor: ['rgba(75,192,192,1)']
           },
           {
-            label: 'Second dataset',
-            data: [33, 25, 35, 51, 54, 76],
+            label: 'Lucro Esperado',
+            data: [33, 25, 35, 51, 54, 76, 65, 45, 43, 30, 22, 37],
             fill: false,
             borderColor: ['#742774']
           }
         ]
       };
+
+    const opitionsLine = {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Lucro Data (2024)'
+            },
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+        },
+    };
     
     const opitions = {
         responsive: true,
@@ -52,7 +83,7 @@ function Dashbord() {
             },
             title: {
               display: true,
-              text: 'Produtividade dos Pequenos Agricultores',
+              text: 'Produtividades dos agricultores',
             },
           },
           scales: {
@@ -133,7 +164,7 @@ function Dashbord() {
                     <p>Aqui você pode baixar ou vizualizar relatorios detalhados 
                         sobre a produtividade agricula semestral</p>
 
-                    <button>Baixar Relatorio</button>
+                    <button onClick={relatorio}>Baixar Relatorio</button>
                 </div>
             </section>
         </main>
@@ -151,7 +182,7 @@ function Dashbord() {
             <section id='graficos'>
                 <h2>Graficos</h2>
             <div className='card'>
-                <Bar data={data2} options={opitions}/>
+                <Line data={dataLine} options={opitionsLine}/>
             </div>
             </section>
 
@@ -172,19 +203,19 @@ function Dashbord() {
                                 <td>Soja</td>
                                 <td>Mato Grosso</td>
                                 <td>120 dias</td>
-                                <td>146,8 milhões de toneladas</td>
+                                <td>2.5 a 3.5 toneladas por hectare</td>
                             </tr>
                             <tr>
-                                <td>Ana Souza</td>
-                                <td>Centro-Oeste</td>
-                                <td>Irrigação Sustentável</td>
-                                <td>20%</td>
+                                <td>Milho</td>
+                                <td>Mato Grosso</td>
+                                <td>100 dias</td>
+                                <td>4 a 7 toneladas por hectare</td>
                             </tr>
                             <tr>
-                                <td>Carlos Lima</td>
+                                <td>Café</td>
                                 <td>Sudeste</td>
-                                <td>Energia Solar</td>
-                                <td>35%</td>
+                                <td>dois anos e meio</td>
+                                <td>20 a 35 sacas (60 kg) por hectare</td>
                             </tr>
                         </tbody>
                     </table>

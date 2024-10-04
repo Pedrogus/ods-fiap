@@ -27,14 +27,14 @@ import './styles.css'
 
         <div className="item">
           <i class='bx bx-cog'></i>
-            <Link className='link' to='#'>Settings</Link>
+            <Link className='link' to='/Settings'>Settings</Link>
         </div>
 
       </div>
         
         <div className="side-profile">
             <i class='bx bx-user' ></i>
-            <Link className='link' to="/Login">Usuario</Link>
+            <Link className='link' to="/Login">Usuario </Link>
         </div>
 
       </div>

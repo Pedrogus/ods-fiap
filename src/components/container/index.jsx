@@ -106,12 +106,10 @@ function Container() {
                         e o que mais estiver combinado com seu agricultor.
                         </div>
                     </div>
-
-
                 </div>
-            </div>
+             </div>
         </div>
-        </div>
+    </div>
 
     );
 }

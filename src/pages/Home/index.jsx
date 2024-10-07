@@ -7,10 +7,10 @@ function Home() {
 
     return (
         <>
-        <body>
+   
             <Navbar />
             <Container />
-        </body>
+        
         </>
     )
 }

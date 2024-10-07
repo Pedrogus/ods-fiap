@@ -95,7 +95,7 @@ function Dashbord() {
 
     return (
         <>
-    <body>
+  
       
         <Navbar />
         
@@ -226,7 +226,7 @@ function Dashbord() {
 
     
     </div>
-    </body>
+  
         </>
     )
 }

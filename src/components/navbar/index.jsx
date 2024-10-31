@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
 import './styles.css'
+import { useLocation } from 'react-router-dom'
 
  function Navbar() {
+
+    const location = useLocation();
+    const {username} = location.state || {};
 
     return (
         <div className="sidebar">
@@ -18,7 +22,7 @@ import './styles.css'
         </div>
         <div className="item">
             <i className='bx bx-bell'></i>
-            <Link className='link' to='#'>Notifications</Link>
+            <Link className='link' to='#'>Chat da Comunidade</Link>
         </div>
         <div className="item">
             <i className='bx bx-cog'></i>
@@ -28,7 +32,7 @@ import './styles.css'
     
     <div className="side-profile">
         <i className='bx bx-user'></i>
-        <Link className='link' to="/Login">Usuario</Link>
+         <Link className='link'>{username ? username : 'Usuário'} </Link>
     </div>
 </div>
     

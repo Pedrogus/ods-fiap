@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './styles.css'
 import Navbar from '../../components/Navbar';
 
+
 const SettingsPage = (props) => {
   const [profile, setProfile] = useState({
-    username: 'Pedro Gustavo',
-    email: 'Email@gmail.com',
+    username: '',
+    email: '',
   });
 
   const [notifications, setNotifications] = useState({
@@ -17,7 +18,7 @@ const SettingsPage = (props) => {
     theme: 'light',
   });
 
-  // Função para atualizar perfil
+  
   const handleProfileChange = (e) => {
     setProfile({
       ...profile,
@@ -25,7 +26,7 @@ const SettingsPage = (props) => {
     });
   };
 
-  // Função para atualizar notificações
+ 
   const handleNotificationChange = (e) => {
     setNotifications({
       ...notifications,
@@ -33,7 +34,7 @@ const SettingsPage = (props) => {
     });
   };
 
-  // Função para atualizar preferências
+  
   const handlePreferencesChange = (e) => {
     setPreferences({
       ...preferences,
@@ -59,6 +60,7 @@ const SettingsPage = (props) => {
         <h2>Perfil</h2>
         <label>
           Nome de Usuário:
+
           <input
             type="text"
             name="username"

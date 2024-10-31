@@ -1,4 +1,7 @@
 import './styles.css'
+import ReactPlayer from 'react-player'
+import React from 'react'
+
 
 function Container() {
 
@@ -21,14 +24,16 @@ function Container() {
                         <p>Aqui comunidades que combinam com você</p>
                     </div>
 
+                  
+
                     <div className="Comunit-cards">
 
-                        <div className="card">
+                    <div className="card">
                             <div className="card-header">
                                 <div className="comunit-info">
                                     <i class='bx bx-chat'></i>
                                 <div>
-                                <h5>WWF-Brasil</h5>
+                                <h5>Syngenta</h5>
                                 <a href="/">Agricultores orgânicos</a>
                                 <p>Encontro da CSA Brasília</p>
                                 </div>
@@ -36,11 +41,11 @@ function Container() {
                             <i class='bx bx-bookmark' ></i>
                         </div>
                         <div className="card-desc">
-                        O funcionamento da CSA é simples: 
-                        por meio de uma cota fixa mensal, os co-agricultores recebem uma 
-                        caixa semanal ou quinzenal de produtos agrícolas, 
-                        como frutas, verduras, legumes, ovos, leite 
-                        e o que mais estiver combinado com seu agricultor.
+                        Você já ouviu falar em êxodo rural? 
+                        Esse é o nome dado ao processo de migração em massa decorrente da 
+                        industrialização acelerada, em que parte da população se mudou do campo para a 
+                        cidade – e parte das comunidades rurais se tornaram comunidades urbanas 
+                        em decorrência da transformação de suas zonas de habitação.
                         </div>
                     </div>
 
@@ -106,6 +111,52 @@ function Container() {
                         e o que mais estiver combinado com seu agricultor.
                         </div>
                     </div>
+
+                    <div className="card">
+                            <div className="card-header">
+                                <div className="comunit-info">
+                                    <i class='bx bx-chat'></i>
+                                <div>
+                                <h5>ManejeBem</h5>
+                                <a href="/">Agricultores orgânicos</a>
+                                <p>Encontro da CSA Brasília</p>
+                                </div>
+                            </div>
+                            <i class='bx bx-bookmark' ></i>
+                        </div>
+                        <div className="card-desc">
+                        O funcionamento da CSA é simples: 
+                        por meio de uma cota fixa mensal, os co-agricultores recebem uma 
+                        caixa semanal ou quinzenal de produtos agrícolas, 
+                        como frutas, verduras, legumes, ovos, leite 
+                        e o que mais estiver combinado com seu agricultor.
+                        </div>
+                    </div>
+
+                    <div className="card">
+                            <div className="card-header">
+                                <div className="comunit-info">
+                                    <i class='bx bx-chat'></i>
+                                <div>
+                                <h5>ManejeBem</h5>
+                                <a href="/">Agricultores orgânicos</a>
+                                <p>Encontro da CSA Brasília</p>
+                                </div>
+                            </div>
+                            <i class='bx bx-bookmark' ></i>
+                        </div>
+                        <div className="card-desc">
+                        O funcionamento da CSA é simples: 
+                        por meio de uma cota fixa mensal, os co-agricultores recebem uma 
+                        caixa semanal ou quinzenal de produtos agrícolas, 
+                        como frutas, verduras, legumes, ovos, leite 
+                        e o que mais estiver combinado com seu agricultor.
+                        </div>
+                    </div>
+
+
+                    <ReactPlayer url={'https://www.youtube.com/watch?v=D2e57FD-dXk'} /> 
+
                 </div>
              </div>
         </div>

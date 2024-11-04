@@ -22,7 +22,7 @@ import { useLocation } from 'react-router-dom'
         </div>
         <div className="item">
             <i className='bx bx-bell'></i>
-            <Link className='link' to='#'>Chat da Comunidade</Link>
+            <Link className='link' to='/Notifications'>Notifiçoes</Link>
         </div>
         <div className="item">
             <i className='bx bx-cog'></i>

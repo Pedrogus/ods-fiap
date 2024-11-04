@@ -14,7 +14,7 @@ function Container() {
                 <i class='bx bx-search' ></i>
                 <input type="text" placeholder="research" />
                 </div>
-                <button>Search</button>
+                <button type='subimit'>Search</button>
             </div>
 
             <div className="main">

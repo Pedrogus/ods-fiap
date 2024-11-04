@@ -3,6 +3,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Dashbord from './pages/DadosdeRecursos'
 import SettingsPage from './pages/Settings'
+import Notifications from './pages/notifications'
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Route path='/Login' element={<Login />} />
       <Route path='/Dashbord' element={<Dashbord />} />
       <Route path='/Settings' element ={<SettingsPage />} />
+      <Route path='/Notifications' element={<Notifications />} />
     </Routes>
     </BrowserRouter>
     </>

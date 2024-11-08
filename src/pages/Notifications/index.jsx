@@ -7,6 +7,8 @@ function Notifications() {
     return (
         <>
         <Navbar></Navbar>
+
+            
         </>
     )
 }

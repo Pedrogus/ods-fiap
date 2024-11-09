@@ -8,6 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+Para baixar as dpendencias use npm install
+
+
 - Para o video pitch https://www.youtube.com/watch?v=D2e57FD-dXk
 
 Grupo.
@@ -28,3 +31,6 @@ Pedro Gustavo Juchimiuk de Oliveira
 pedrojuchimiuk@gmail.com 
 
 Apresentando ODS-FIAP, uma plataforma de comunidades para pequenos Agricultores.
+
+
+Link para o site na Vercel: https://ods-fiap-7coyedm32-pedrogus-projects.vercel.app

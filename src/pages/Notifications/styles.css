@@ -1,0 +1,42 @@
+/* Estilo geral */
+.notifications-container {
+  width: 500px;
+  height: 500px;
+  max-width: 90%;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.notification-icon {
+  width: 100px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #666;
+  margin-right: 16px;
+}
+
+.notification-text {
+  font-size: 14px;
+  line-height: 1.4;
+}

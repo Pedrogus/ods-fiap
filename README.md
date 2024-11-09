@@ -1,15 +1,8 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para baixar as dependencias use npm install
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-Para baixar as dpendencias use npm install
-
+Link para o site na Vercel: https://ods-fiap-c7982wju2-pedrogus-projects.vercel.app
 
 - Para o video pitch https://www.youtube.com/watch?v=D2e57FD-dXk
 
@@ -33,4 +26,3 @@ pedrojuchimiuk@gmail.com
 Apresentando ODS-FIAP, uma plataforma de comunidades para pequenos Agricultores.
 
 
-Link para o site na Vercel: https://ods-fiap-7coyedm32-pedrogus-projects.vercel.app

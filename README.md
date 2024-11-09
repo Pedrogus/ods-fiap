@@ -2,7 +2,7 @@
 
 Para baixar as dependencias use npm install
 
-Link para o site na Vercel: https://ods-fiap-c7982wju2-pedrogus-projects.vercel.app
+Link para o site na Vercel: https://ods-fiap.vercel.app/
 
 - Para o video pitch https://www.youtube.com/watch?v=D2e57FD-dXk
 
